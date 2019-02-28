@@ -1,12 +1,11 @@
-body{
-
+body {
 	font-size: 14px;
-	color: #333;
-	background-color: #fff;
-	letter-spacing: 1px;
-	
+    color: #333;
+    background-color: #fff;
+    letter-spacing: 1px;
 }
-.overlay{
+
+.overlay {
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -14,95 +13,144 @@ body{
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
-.slides-navigation .next,
-.slides-navigation .prev{
+.slides-navigation {
+	z-index: 6;
+}
 
+.slides-navigation .prev,
+.slides-navigation .next {
 	width: 47px;
 	height: 47px;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
-.slides-navigation{
-	z-index: 6;
-}
-.slides-navigation a.next{
-	right: 20px;
-	background-image: url(../img/icons/right.png);
-}
-
-.slides-navigation a.prev{
+.slides-navigation a.prev {
 	left: 20px;
-	background-image: url(../img/icons/left.png);
-
+	background-image: url(../img/icons/prev.png);
 }
-.titleMessage{
+
+.slides-navigation a.next {
+	right: 20px;
+	background-image: url(../img/icons/next.png);
+}
+
+.titleMessage {
 	position: absolute;
-	width: 100%;
-	height: 250px;
-	top: 50%;
-	z-index: 5;
-	text-align: center;
-	margin-top: -125px;
-
+    width: 100%;
+    height: 250px;
+    top: 50%;
+    z-index: 5;
+    text-align: center;
+    margin-top: -125px;
 }
-.titleMessage .heading p{
+
+.titleMessage .heading p {
 	color: #fff;
-	text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
-	font-weight: 120;
-	letter-spacing: 8px;
-
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    font-weight: 100;
+    letter-spacing: 7px;
 }
 
-.titleMessage .heading .main{
+.titleMessage .heading .main {
 	font-size: 50px;
 }
-.titleMessage .heading .sub{
-	font-size: 22px
+
+.titleMessage .heading .sub {
+	font-size: 23px;
 }
 
-.section{
-	padding: 100px 0 ;
+.section {
+	padding: 100px 0;
 }
-.aboutImage{
-	max-width: 100%;
-	
+
+.aboutImage {
+	max-width: 80%;
+
 }
-.aboutMe{
-	font-family: 'Shadows Into Light Two', cursive;
-	font-size: 18px
-}
-.skillsSection{
+
+.skillsSection {
 	background-color: #ff4757;
 	color: #fff;
 }
-.skill{
+
+.skill {
 	text-align: center;
 	margin-left: 10px;
 }
-.chart{
+
+.chart {
 	position: relative;
-	width: 152px;
-	height: 152px;
-	display: inline-block;
-	
-	text-align: center;
+    width: 152px;
+    height: 152px;
+    display: inline-block;
+    text-align: center;
 }
 
-.chart canvas{
+.chart canvas {
 	position: absolute;
-	left: 0;
-	top: 0;
+    left: 0;
+    top: 0;
 }
 
-.chart .percent{
+.chart .percent {
 	color: #000;
-	line-height: 152px;
-	display: inline-block;
-	font-size: 25px;
+    line-height: 152px;
+    display: inline-block;
+    font-size: 35px;
 }
-
 
 .chart .percent:after {
 	content: '%';
 }
+
+
+.squareItem {
+	margin-top: 30px;
+    position: relative;
+}
+
+.squareInnerContainer {
+	position: relative;
+	padding: 50px 15px 35px;
+	text-align: center;
+	border: 2px solid #444;
+	border-top: none;
+}
+
+.squareInnerContainer:before,
+.squareInnerContainer:after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	width: 30%;
+	border-bottom: 2px solid #444;
+}
+
+
+.squareInnerContainer:before {
+	right: 0px;
+}
+
+.squareInnerContainer:after {
+	left: 0px
+}
+
+
+.squareContent h2 {
+	font-size: 56px;
+	margin-bottom: 10px;
+	font-weight: 400;
+	color: #e74c3c;
+}
+
+.squareContent h3 {
+	font-size: 13px;
+	font-weight: 600;
+	margin: 0;
+}
+
+
+
+
+
