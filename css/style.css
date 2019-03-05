@@ -137,19 +137,25 @@ body {
 }
 
 
-.squareContent h2 {
-	font-size: 56px;
+.squareContent h5 {
+	font-size: 30px;
 	margin-bottom: 10px;
 	font-weight: 400;
 	color: #e74c3c;
 }
 
-.squareContent h3 {
+/*.squareContent h3 {
 	font-size: 13px;
 	font-weight: 600;
 	margin: 0;
-}
+}*/
 
+.squareIcon{
+
+	        position: absolute;
+    		margin-left: 75px;
+    		margin-top: -65px;
+}
 
 
 
